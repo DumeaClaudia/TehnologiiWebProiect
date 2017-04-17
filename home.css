@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    background-color:lightgray;
+}
+
+#main {
+   
+    position: relative;
+    top: 0px;
+    max-width:760px;
+    /*
+    max-height: 100px;*/
+    height:700px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: antiquewhite;
+    background-size: cover;
+    filter:alpha(opacity=90);
+    opacity:0.930;
+    border: 1px solid black;
+    border-style: dotted;
+}
+
+#bar {
+
+    z-index: 30;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    color: black;
+    height: 100px; 
+    border: 1px solid floralwhite;
+    border-style: dashed;
+   
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 12px 33px;
+    top: 10px;
+    text-align: center;
+    font-family: "Georgia", Times, serif;
+    font-size: 20px;
+    margin: 7px 20px;
+    /*cursor: pointer;*/
+}
+.button:hover {
+    background-color: dimgrey;
+
+}
+
+.button1 {background-color: seagreen;}
+.button2 {background-color: seagreen;} 
+.button3 {background-color: seagreen;} 
+.button4 {background-color: seagreen; }

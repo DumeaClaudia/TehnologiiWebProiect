@@ -1,30 +1,228 @@
 body {
     margin: 0px;
+}
+
+#background {
     background-color:lightgray;
+    position:absolute;
+    width:100%;
+    height: 1100px;
+    top: 0px;
 }
 
 #main {
-   
     position: relative;
-    top: 0px;
-    max-width:760px;
-    /*
-    max-height: 100px;*/
-    height:700px;
+    top: -30px;
+    max-width:960px;
+    height:920px;
     margin: 0px auto;
     text-align: center;
     background-color: antiquewhite;
-    background-size: cover;
-    filter:alpha(opacity=90);
-    opacity:0.930;
-    border: 1px solid black;
-    border-style: dotted;
 }
+
+#bar {
+    text-align: right;
+    position: relative;
+    background-color: darkslategrey;
+    width: 100%;
+    color: black;
+    height: 120px; 
+}
+
+   
+#name {
+    color: bisque;
+    font-family: serif;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-shadow: 4px 2px 9px black;
+    
+}
+/* 1 ================================================================  1 */  
+@media only screen and (max-width: 804px)
+                    and (min-width: 558px){
+                      
+                        
+    .button {
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 15px;
+    }
+    
+    
+    .button:hover {
+        background-color: dimgrey;
+
+    }
+    
+    .button1 {background-color: seagreen;}
+    .button2 {background-color: seagreen;} 
+    .button3 {background-color: seagreen;} 
+    .button4 {background-color: seagreen; }
+
+
+    a:link {
+        position: relative;
+        color: white;
+        background-color: seagreen;
+        text-decoration: none;
+        border: none;
+        color: black;
+        padding: 12px 23px;
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 15px;
+        /*margin: 7px 20px;*/
+    }
+    a:visited {
+        color: pink;
+        background-color: seagreen;
+        text-decoration: none;
+    }
+    a:hover {
+        color: peachpuff;
+        background-color: dimgray;
+        text-decoration: underline;
+    }
+    a:active {
+        color: darkslategrey;
+        background-color: gray;
+        text-decoration: underline;
+    }                  
+    #name {
+        visibility: hidden;
+    }
+    
+} 
+
+/* 2 ================================================================  2 */
+@media only screen and (min-width: 557px) {
+    
+      .button {
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 10px;
+    }
+    
+    
+    .button:hover {
+        background-color: dimgrey;
+
+    }
+    
+    .button1 {background-color: seagreen;}
+    .button2 {background-color: seagreen;} 
+    .button3 {background-color: seagreen;} 
+    .button4 {background-color: seagreen; }
+
+
+    a:link {
+        position: relative;
+        color: white;
+        background-color: seagreen;
+        text-decoration: none;
+        border: none;
+        color: black;
+        padding: 12px 13px;
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 10px;
+        /*margin: 7px 20px;*/
+    }
+    a:visited {
+        color: pink;
+        background-color: seagreen;
+        text-decoration: none;
+    }
+    a:hover {
+        color: peachpuff;
+        background-color: dimgray;
+        text-decoration: underline;
+    }
+    a:active {
+        color: darkslategrey;
+        background-color: gray;
+        text-decoration: underline;
+    }                  
+    #name {
+        visibility: hidden;
+    }
+                     
+} 
+
+
+
+
+
+
+
+/* 3 ================================================================  3 */ 
+
+@media only screen and (min-width: 805px) {
+    .button {
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 30px;
+    }
+    
+    
+    .button:hover {
+        background-color: dimgrey;
+
+    }
+    
+    .button1 {background-color: seagreen;}
+    .button2 {background-color: seagreen;} 
+    .button3 {background-color: seagreen;} 
+    .button4 {background-color: seagreen; }
+
+
+    a:link {
+        position: relative;
+        color: white;
+        background-color: seagreen;
+        text-decoration: none;
+        border: none;
+        color: black;
+        padding: 12px 33px;
+        top: 0px;
+        text-align: center;
+        font-family: "Georgia", Times, serif;
+        font-size: 20px;
+        /*margin: 7px 20px;*/
+    }
+    a:visited {
+        color: pink;
+        background-color: seagreen;
+        text-decoration: none;
+    }
+    a:hover {
+        color: peachpuff;
+        background-color: dimgray;
+        text-decoration: underline;
+    }
+    a:active {
+        color: darkslategrey;
+        background-color: gray;
+        text-decoration: underline;
+    }
+} 
+
+
+
 .form-label {
     
     float:left;
     width:20%;
 }
+
 input {
     position:relative;
     clear:both;
@@ -67,6 +265,24 @@ input {
     
 }
 
+#logg {
+     position: relative;
+    text-align-last: center;
+    top: 30px;
+    bottom: 1px;  
+    left: 20px;
+    font-size: 15px;
+    
+}
+
+#welcome {
+    font-size: 30px;
+    padding-bottom: 25px;
+    padding-top: 27px;
+    text-align: center;
+    text-shadow: 2px 3px 16px black;
+}
+
 input[type=text],input[type=password]{
         font-size:17px;
     } 
@@ -88,7 +304,11 @@ input[type=text],input[type=password]{
     input[type=text],input[type=password]{
         font-size:12px;
     }
-    
+        
+    #welcome{
+        font-size: 25px;
+        font-family: serif;
+    }
     
 } 
 
@@ -97,20 +317,10 @@ input[type=text],input[type=password]{
     input[type=text],input[type=password]{
         font-size:10px;
     }
+    #welcome{
+        font-size: 20px;
+        font-family: serif;
+    }
     
     
 } 
-#logg {
-     position: relative;
-    text-align-last: center;
-    top: 30px;
-    bottom: 1px;  
-    left: 20px;
-    font-size: 15px;
-    
-}
-
-#welcome {
-    font-size: 20px;
-    padding-bottom: 25px;
-}

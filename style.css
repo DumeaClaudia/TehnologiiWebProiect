@@ -29,6 +29,8 @@ body {
 }
    
 #name {
+   
+        
     color: bisque;
     font-family: serif;
     font-size: 35px;
@@ -36,7 +38,7 @@ body {
     padding-left: 30px;
     padding-top: 20px;
     text-shadow: 4px 2px 9px black;
-    
+   
 }
 
 
@@ -144,15 +146,49 @@ a.menu-button.page-active:link {
     #main {
         background-color:lightblue;   
     }
+    #name {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media screen and (min-width: 480px)
-    and (max-width: 767px){
+        and (max-width: 767px){
+    a.menu-button:link {
+        font-size: 18px;
+        width: 100%;
+        margin: auto;
+        padding: 12px 13px;
+        border: 1px solid pink;
+       
+    }
+    #name {
+        margin-bottom: 20px;
+    }
+    #bar {
+          text-align: center;      
+    }
+    
         
 }
 
-@media screen and (min-width: 479px){
-        
+@media screen and (max-width: 479px){
+    a.menu-button:link {
+         font-size: 20px;
+         padding: 12px 13px;
+         width: 100%;
+        display: block;
+
+        border: 1px dashed pink;
+        margin:auto;
+    }
+    #name {
+        margin-bottom: 30px;
+    }
+    #bar {
+        height: 300px; 
+    }
+  
 }
 
 @media and (device-aspect-ratio: 16/9){

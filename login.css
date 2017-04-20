@@ -22,8 +22,7 @@
 }
 
 .form-label {
-    float:left;
-    width:20%;
+    text-align: left;
 }
 
 input {
@@ -36,23 +35,28 @@ input {
     position: relative;
     background-color: burlywood;
     opacity: 0.9;
-    height: 40%;
+    /*height: 40%;
     width: 30%;
     min-width: 140px;
     max-height: 190px;
-    margin: 0px auto;
-    margin-left: 100px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 10px;*/
+    
+    margin: 0px auto;
+    margin-left: 100px;
+    
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 15px;  
 }
 
 #user {
     /*position: relative;
     text-align-last: left;*/
     font-size: 18px;
-     width: 18px;
 }
 
 #pass {
@@ -60,28 +64,20 @@ input {
     text-align-last: left;
   */
     font-size: 18px;
-     width: 18px;
     
 }
 
 #logg {
      position: relative;
     text-align-last: center;
-    top: 30px;
+    top: 20px;
     bottom: 1px;  
-    left: 20px;
+
     font-size: 15px;
     
 }
 
 
-
-#formular {
-    width: 30%;
-    height: 100%;
-    float: left;
-    padding: 15px;  
-}
 
 
 .prop {
@@ -91,6 +87,7 @@ input {
     font-size: 19px;
     text-align: center;
     padding-right: 30px;
+    text-shadow: 2px 3px 16px peru;
     /*padding-top: -100px;
     top: -100px; */
 }
@@ -119,7 +116,7 @@ input[type=text],input[type=password]{
         font-size:17px;
 } 
 
-@media screen and (min-width: 778px) and (max-width: 959px)
+@media screen and (min-width: 768px) and (max-width: 959px)
                {
     input[type=text],input[type=password]{
         font-size:15px;
@@ -137,19 +134,49 @@ input[type=text],input[type=password]{
     }
 } 
 
-@media screen and (max-width: 591px) {
+@media screen and (max-width: 479px) {
     input[type=text],input[type=password]{
-        font-size:10px;
+        font-size:1em;
+        width: 100%;
+        margin: auto;
     }
+    #pas
     #welcome{
+        margin: auto;
         font-size: 20px;
         font-family: serif;
+        width: 100%;
+       
+    }
+    #formular{
+       
+        height: 100%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 80px;
+        margin-top: -70px;
+        float:none;
+        min-width: 70%;
+        
+    }
+    #user{
+        //text-align: center;
     }
     
     .prop {
-    font-size: 15px;
+        font-size: 18px;
         width: 100%;
-        float:inherit;
-        padding-top: 20px;
+        float: none;
+        padding: 20px;
+        margin: auto;
+        
+    }
+    .prop p {
+        margin: 0px;
     }
 } 
+
+@media and (device-aspect-ratio: 16/9){
+        
+}
+

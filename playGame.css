@@ -90,7 +90,7 @@ body {
         text-decoration: underline;
     }                  
     #name {
-        //visibility: hidden;
+        /*visibility: hidden; */
     }
                      
 } 
@@ -225,3 +225,20 @@ body {
 } 
 
 
+#footer {
+    position: relative;
+    max-width:960px;
+    width: 100%;
+    background-color: gray;
+    height: 80px;
+    margin: 0px auto;
+    text-align: center;
+    table-layout: auto;
+    font-family: monospace;
+    font-size: 16px;
+    color: black;
+    opacity:0.90;
+    border: 1px solid green;
+    border-style: dotted;
+  
+}

@@ -12,14 +12,14 @@
     font-size: 30px;
     padding-top: 35px;
     text-align: center;
-    text-shadow: 2px 3px 16px peru;
+    text-shadow: 2px 3px 16px gray;
 }
 
 #begging {
     font-size: 18px;
     padding-bottom: 55px;
     text-align: center;
-    text-shadow: 2px 3px 16px peru;
+    text-shadow: 2px 3px 16px gray;
 }
 
 .form-label {
@@ -34,7 +34,7 @@ input {
 
 #formular {
     position: relative;
-    background-color: burlywood;
+    background-color: darkseagreen;
     opacity: 0.9;
     margin: 0px auto;
     margin-left: 100px;
@@ -70,7 +70,7 @@ input {
     font-size: 19px;
     text-align: center;
     padding-right: 30px;
-    text-shadow: 2px 3px 16px peru;
+    text-shadow: 2px 3px 16px gray;
     margin-top: -60px;
 }
 
@@ -150,7 +150,7 @@ input[type=text],input[type=password] {
     }
 } 
 
-@media and (device-aspect-ratio: 16/9){
+@media screen and (device-aspect-ratio: 16/9){
         
 }
 

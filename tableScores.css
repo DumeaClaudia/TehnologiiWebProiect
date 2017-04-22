@@ -28,18 +28,17 @@ table {
 th, td {
     text-align: left;
     padding: 8px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid seagreen;
 }
 
 tr:nth-child {background-color: #f2f2f2}
-tr:hover{background-color:darkseagreen}
+tr:hover{background-color: darkseagreen}
 
 th {
-    background-color: #4CAF50;
+    background-color: seagreen;
     color: white;
 }
 tr {
-    background-color: whitesmoke;
     background-color: whitesmoke;
     color: black;
 }

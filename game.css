@@ -1,5 +1,8 @@
 #game-title p {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: serif;
+    color: #1C2F2F;
+    padding-right: 150px;
 }
 
 #main-bottom {
@@ -31,7 +34,7 @@
 
 div.answers {
     padding: 2px;
-    max-width: auto;
+    max-width: 100%;
 }
 
 div.game {
@@ -113,30 +116,29 @@ tr:hover {
     width: 180px;
     position: absolute;
     top: 80px;
-    right:20px;
+    right: 20px;
     margin-bottom: auto;
-    text-align: center ;
-   
+    text-align: center;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 400px;
-    
     border: 5px solid #ddd;
     padding-top: 20px;
-     visibility: collapse;
+    visibility: collapse;
     opacity: 0;
     transition: 1s;
     color: darkslategray;
-  
 }
+
 #others-scores p {
     margin: 5px;
 }
-hr.scores-hr{
+
+hr.scores-hr {
     width: 80%;
     height: 1px;
     background-color: darkgray;
-    border:none;
+    border: none;
 }
 
 @media screen and (min-width: 960px) {
@@ -148,20 +150,43 @@ hr.scores-hr{
     #game-holder {
         left: 00px;
         margin-right: auto;
-        margin-left:100px;
+        margin-left: 100px;
     }
     div.game {
         left: 0px;
         margin-right: auto;
         margin-left: 0px;
     }
-    #others-scores {
-        
-    }
+    #others-scores {}
     .user-score {
-          left: 00px;
-          margin-right: auto;
-          margin-left:105px; 
+        left: 0px;
+        margin-right: auto;
+        margin-left: 105px;
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 959px) {}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #game-title p {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .answer-button {
+        width: 100%;
+        padding: 12px 13px;
+    margin-bottom: 2px;
+        display: block;
+        border-top: 1px solid green;
+        margin: auto;
+        
+    }
+    #game-title p {
+        padding-right: 0px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (device-aspect-ratio: 16/9) {}

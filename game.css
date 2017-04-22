@@ -1,3 +1,28 @@
+#game-title p{
+    font-size: 20px;
+}
+
+#main-bottom{ 
+    padding-bottom: 20px;
+}
+.user-score-detail
+{
+    background-color:#ddd;
+    font-size: 20px;
+    margin:0px;
+}
+.user-score {
+    width: 90%;
+    max-width: 600px;
+    padding: 5px;
+    margin: auto;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    
+}
+
 #game-holder {
     max-width: 90%;
     margin:auto;
@@ -70,3 +95,16 @@ div.game {
   opacity: 1;
   right: -15px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}

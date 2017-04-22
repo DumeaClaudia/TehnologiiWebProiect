@@ -1,13 +1,18 @@
+.content {
+    max-width: 700px;
+    margin:auto;
+    padding:10px;
+}
 
-.begin {
-     padding: 15px;
+.content-box {
+     background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #introducere {
     font-size: 18px;
-    padding-bottom: 55px;
     text-align: left;
-    margin: 50px;
     text-shadow: 2px 3px 16px gray;
 }
 
@@ -15,7 +20,7 @@
 
 table {
     border-collapse: collapse;
-    width: 800px;
+    width: 100%;
     text-align: center;
     margin:auto;
 }
@@ -39,9 +44,7 @@ tr {
     color: black;
 }
 #title-classification{
-    top: 0px;
     font-size: 25px;
     text-align: left;
-    padding-bottom: 10px;
-    padding-left: 50px;
+
 }

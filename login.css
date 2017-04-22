@@ -34,7 +34,7 @@ input {
 
 #formular {
     position: relative;
-    background-color: darkseagreen;
+    background-color: seagreen;
     opacity: 0.9;
     margin: 0px auto;
     margin-left: 100px;
@@ -44,6 +44,7 @@ input {
     float: left;
     padding: 15px; 
     padding-bottom: 40px;
+    box-shadow: 5px 5px 10px grey;
 }
 
 #user {
@@ -75,23 +76,7 @@ input {
 }
 
 
-#footer {
-    position: relative;
-    top: -30px;
-    max-width:960px;
-    width: 100%;
-    background-color: gray;
-    height: 80px;
-    margin: 0px auto;
-    text-align: center;
-    table-layout: auto;
-    font-family: monospace;
-    font-size: 16px;
-    color: black;
-    opacity:0.90;
-    border: 1px solid green;
-    border-style: dotted;
-}
+
 
 
 input[type=text],input[type=password] {

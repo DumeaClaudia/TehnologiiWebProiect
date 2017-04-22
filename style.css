@@ -67,9 +67,9 @@ body {
     margin: 0px auto;
     text-align: center;
     table-layout: auto;
-    font-family: monospace;
+    font-family: serif;
     font-size: 16px;
-    color: black;
+    color: #6D8383;
     border: 1px solid green;
     border-style: dotted;
   
@@ -83,28 +83,30 @@ a.menu-button:link {
     background-color: seagreen;
     text-decoration: none;
     border: none;
-    color: black;
+    color: #1C2F2F;
     padding: 12px 33px;
     top: 0px;
     text-align: center;
     font-family: "Georgia", Times, serif;
     font-size: 20px;
+    transition: 0.2s;
+    transition-timing-function:ease-in-out;
     /*margin: 7px 20px;*/
 }
 
 a.menu-button:visited {
-    color: black;
+    color: #1C2F2F;
     text-decoration: none;
 } 
 a.menu-button:hover {
     color: whitesmoke;
     background-color: dimgray;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a.menu-button:active {
     color: darkslategrey;
     background-color: gray;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a.menu-button.page-active:link {
@@ -128,7 +130,6 @@ a.menu-button.page-active:link {
         width: 100%;
         margin: auto;
         padding: 13px 20px;
-        border: 1px solid green;
     }
     #name {
         margin-bottom: 20px;
@@ -146,7 +147,8 @@ a.menu-button.page-active:link {
          padding: 12px 13px;
          width: 100%;
         display: block;
-        border: 1px solid green;
+        border-top: 1px solid green;
+        
         margin:auto;
     }
     #name {

@@ -11,8 +11,10 @@
 
 .user-score-detail {
     background-color: #ddd;
-    font-size: 20px;
+    font-size: 17px;
     margin: 0px;
+    padding: 5px;
+    padding-left: 10px;
 }
 
 .user-score {
@@ -57,9 +59,8 @@ div.game {
 }
 
 .vip-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px rgba(100, 140, 186, 0.7);
 }
-
 .answer-button {
     background-color: seagreen;
     /* Green */
@@ -74,14 +75,28 @@ div.game {
     margin: 2px;
 }
 
-.answer-button span {
+.arrow-button {
+    background-color: seagreen;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 48%;
+    margin: 2px;
+}
+
+.arrow-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.answer-button span:after {
+.arrow-button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -90,7 +105,7 @@ div.game {
     transition: 0.5s;
 }
 
-.answer-button:hover span:after {
+.arrow-button:hover span:after {
     opacity: 1;
     right: -15px;
 }
@@ -190,3 +205,5 @@ hr.scores-hr {
 }
 
 @media screen and (device-aspect-ratio: 16/9) {}
+
+

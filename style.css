@@ -64,8 +64,6 @@ body {
     font-family: serif;
     font-size: 16px;
     color: #6D8383;
-    border: 1px solid green;
-    border-style: dotted;
 }
 
 a.menu-button:link {
@@ -80,9 +78,10 @@ a.menu-button:link {
     text-align: center;
     font-family: "Georgia", Times, serif;
     font-size: 20px;
+    /*
     transition: 0.2s;
     transition-timing-function: ease-in-out;
-    /*margin: 7px 20px;*/
+    margin: 7px 20px;*/
 }
 
 a.menu-button:visited {

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "search1",
+        "score": 50,
+        "games": 3
+    },
+     {
+        "name": "search2",
+        "score": 50,
+        "games": 3
+    },
+     {
+        "name": "search3",
+        "score": 50,
+        "games": 3
+    }
+]

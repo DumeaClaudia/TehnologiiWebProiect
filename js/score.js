@@ -11,24 +11,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     
     
-    var answers_div = document.getElementById('game-answers')
-    var answer_buttons = answers_div.getElementsByTagName('button');
-    var next_div = document.getElementById('next-level');
-    var length =  answer_buttons.length, i = 0;
+    var answers_div = document.getElementById('game-answers'),
+        answer_buttons = answers_div.getElementsByTagName('button'),
+        next_div = document.getElementById('next-level'),
+        length = answer_buttons.length,
+        i = 0;
     
     for (i = 0; i < length; i = i + 1) {
-        answer_buttons[i].addEventListener('click', function(e) {
-            var answer_text = this.textContent; 
-            document.getElementById('answer-feedback').innerHTML = "Raspunsul tau " + answer_text + " nu este corect.";
-            answers_div.style.display= "none";
+        answer_buttons[i].addEventListener('click', function (e) {
+            var answer_text = this.textContent;
+            document.getElementById('answer-feedback').innerHTML = "Your answer " + answer_text + " isn't correct.";
+            answers_div.style.display = "none";
             next_div.style.display = "block";
         });
     }
     
-    document.getElementById('next-button').addEventListener('click', function(){
-         next_div.style.display = "none";
-         answers_div.style.display= "block";
-        
+    document.getElementById('next-button').addEventListener('click', function () {
+        next_div.style.display = "none";
+        answers_div.style.display = "block";
     });
     
     

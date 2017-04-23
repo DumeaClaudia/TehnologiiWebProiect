@@ -6,15 +6,18 @@
 }
 
 #main-bottom {
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 
 .user-score-detail {
     background-color: #ddd;
     font-size: 17px;
     margin: 0px;
-    padding: 5px;
-    padding-left: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: serif;
 }
 
 .user-score {
@@ -31,7 +34,7 @@
 #game-holder {
     max-width: 90%;
     margin: auto;
-    padding: 10px;
+    padding: 30px 10px;
 }
 
 div.answers {
@@ -75,6 +78,10 @@ div.game {
     margin: 2px;
 }
 
+.answer-button:hover {
+    background-color: dimgray;
+}
+
 .arrow-button {
     background-color: seagreen;
     /* Green */
@@ -85,7 +92,7 @@ div.game {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 48%;
+    width: 25%;
     margin: 2px;
 }
 
@@ -163,7 +170,7 @@ hr.scores-hr {
         transition: 1s;
     }
     #game-holder {
-        left: 00px;
+        left: 0px;
         margin-right: auto;
         margin-left: 100px;
     }
@@ -176,7 +183,7 @@ hr.scores-hr {
     .user-score {
         left: 0px;
         margin-right: auto;
-        margin-left: 105px;
+        margin-left: 110px;
     }
 }
 
@@ -209,4 +216,15 @@ hr.scores-hr {
 
 #next-level{
     display: none;
+    padding-bottom: 20px;
+}
+
+#answer-feedback {
+    font-family: serif;
+    font-size: 18px;
+    
+}
+
+.game {
+    padding-bottom: 10px;
 }

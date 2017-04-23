@@ -207,3 +207,6 @@ hr.scores-hr {
 @media screen and (device-aspect-ratio: 16/9) {}
 
 
+#next-level{
+    display: none;
+}

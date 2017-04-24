@@ -165,6 +165,7 @@ input[type=password] {
         font-family: serif;
         width: 100%;
         text-align: center;
+        padding-left: 20px;
     }
     #formular {
         position: relative;
@@ -178,10 +179,11 @@ input[type=password] {
         float: left;
         padding: 15px;
         padding-bottom: 40px;
+        margin-left: 70px;
         box-shadow: 5px 5px 10px grey;
     }
     .prop {
-        font-size: 18px;
+        font-size: 16px;
         width: 10%;
         float: none;
         padding: 20px;
@@ -193,12 +195,31 @@ input[type=password] {
         display: none;
     }
     #about-game {
-        font-size: 17px;
+        font-size: 16px;
         padding-bottom: 55px;
-        padding-right: 80px;
+        padding-right: 90px; /**/
+        width: 100%;
         text-align: center;
         text-shadow: 2px 3px 16px gray;
     }
 }
 
-@media screen and (device-aspect-ratio: 16/9) {}
+@media screen and (device-aspect-ratio: 16/9) {
+    .prop {
+        font-size: 16px;
+        width: 10%;
+        float: none;
+        padding: 20px;
+        margin: auto;
+        display: none;
+    }
+     #welcome {
+        margin: auto;
+        margin-top: 30px;
+        font-size: 23px;
+        font-family: serif;
+        width: 100%;
+        text-align: center;
+        padding-left: 20px;
+    }
+}

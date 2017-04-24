@@ -1,24 +1,35 @@
-
-
 * {
     box-sizing: border-box;
 }
 
 .begin {
-     padding: 15px;
+    padding: 15px;
+}
+
+#about-game {
+    float: left;
+    text-align: left;
+    width: 500px;
+    margin: 50px;
+    margin-right: 20px;
+    font-family: serif;
+    font-size: 18px;
+    color: black;
+}
+
+.vip-collage {
+    margin-left: 30px;
+    padding-left: 30px;
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 250px;
 }
 
 #welcome {
     font-size: 30px;
-    padding-top: 35px;
-    text-align: center;
-    text-shadow: 2px 3px 16px gray;
-}
-
-#begging {
-    font-size: 18px;
-    padding-bottom: 55px;
-    text-align: center;
+    padding-left: 105px;
+    text-align: left;
     text-shadow: 2px 3px 16px gray;
 }
 
@@ -27,9 +38,9 @@
 }
 
 input {
-    position:relative;
-    clear:both;
-    float:left;
+    position: relative;
+    clear: both;
+    float: left;
 }
 
 #formular {
@@ -37,106 +48,157 @@ input {
     background-color: seagreen;
     opacity: 0.9;
     margin: 0px auto;
-    margin-left: 100px;
-    margin-top: -60px;
+    margin-left: 70px;
+    margin-top: 0px;
     width: 30%;
-    height: 40%;
+    height: 30%;
     float: left;
-    padding: 15px; 
+    padding: 15px;
     padding-bottom: 40px;
     box-shadow: 5px 5px 10px grey;
 }
 
 #user {
+    padding-top: 20px;
     font-size: 18px;
 }
 
 #pass {
     font-size: 18px;
-    
 }
 
 #logg {
-     position: relative;
+    position: relative;
     text-align-last: center;
     top: 20px;
-    bottom: 1px;  
+    bottom: 1px;
     font-size: 15px;
 }
 
 .prop {
     width: 50%;
     float: left;
-    padding: 15px;
-    font-size: 19px;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-size: 18px;
     text-align: center;
-    padding-right: 30px;
+    font-family: serif;
     text-shadow: 2px 3px 16px gray;
-    margin-top: -60px;
+    background-color: darkgray;
+    box-shadow: 5px 5px 10px grey;
+    border: 2px dashed darkslategrey;
 }
 
-
-input[type=text],input[type=password] {
-        font-size:17px;
-} 
-
+input[type=text],
+input[type=password] {
+    font-size: 17px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
-    input[type=text],input[type=password]{
-        font-size:15px;
+    input[type=text],
+    input[type=password] {
+        font-size: 15px;
     }
-} 
+    .vip-collage {
+        display: none;
+        visibility: hidden;
+    }
+    .prop {
+        font-size: 18px;
+        width: 40%;
+        float: right;
+        padding: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    #about-game {
+        font-size: 18px;
+        padding-bottom: 55px;
+        text-align: center;
+        text-shadow: 2px 3px 16px gray;
+        width: 80%;
+    }
+}
 
-
-@media screen  and (min-width: 520px) and (max-width: 767px) {
-     input[type=text],input[type=password]{
-        font-size:15px;
+@media screen and (min-width: 552px) and (max-width: 767px) {
+    input[type=text],
+    input[type=password] {
+        font-size: 15px;
+        ;
         width: 100%;
         margin: auto;
     }
-    #formular {
-        height: 35%;
+    .vip-collage {
+        display: none;
+        visibility: hidden;
     }
-} 
+    .prop {
+        font-size: 18px;
+        width: 40%;
+        float: right;
+        padding: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        ;
+    }
+    #about-game {
+        font-size: 17px;
+        padding-bottom: 55px;
+        text-align: center;
+        text-shadow: 2px 3px 16px gray;
+        width: 90%;
+    }
+}
 
-
-@media screen and (max-width: 519px) {
-    input[type=text],input[type=password]{
-        font-size:15px;
+@media screen and (max-width: 551px) {
+    input[type=text],
+    input[type=password] {
+        font-size: 15px;
+        ;
         width: 100%;
         margin: auto;
     }
     #welcome {
         margin: auto;
-        font-size: 20px;
+        margin-top: 30px;
+        font-size: 23px;
         font-family: serif;
         width: 100%;
+        text-align: center;
     }
     #formular {
+        position: relative;
+        background-color: seagreen;
+        opacity: 0.9;
+        margin: 0px auto;
+        margin-left: 100px;
+        margin-top: -60px;
+        width: 70%;
         height: 30%;
-        width: 40%;
-        margin: auto;
-        margin-bottom: 20px;
-        padding-top: 10px;
-        padding-bottom: 80px;
-        margin-top: -70px;
-        float:none;
-        min-width: 70%; 
+        float: left;
+        padding: 15px;
+        padding-bottom: 40px;
+        box-shadow: 5px 5px 10px grey;
     }
     .prop {
         font-size: 18px;
-        width: 100%;
+        width: 10%;
         float: none;
         padding: 20px;
         margin: auto;
-        
+        display: none;
     }
-    .prop p {
-        margin: 0px;
+    .vip-collage {
+        visibility: hidden;
+        display: none;
     }
-} 
-
-@media screen and (device-aspect-ratio: 16/9){
-        
+    #about-game {
+        font-size: 17px;
+        padding-bottom: 55px;
+        padding-right: 80px;
+        text-align: center;
+        text-shadow: 2px 3px 16px gray;
+    }
 }
 
+@media screen and (device-aspect-ratio: 16/9) {}

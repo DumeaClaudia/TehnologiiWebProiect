@@ -12,10 +12,11 @@ body {
 }
 
 #top-logo {
-    /* background-color:darkslategrey; */
+     background-color:darkslategrey; 
     background-image: url("img/art/top-fictional-monologues-of-all-time-PzUyRb-clipart.jpg");
     background-size: cover;
     margin-top: -200px;
+    margin-right: -100;
     position: fixed;
     width: 800px;
     height: 400px;

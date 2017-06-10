@@ -1,3 +1,17 @@
+<?php
+ ob_start();
+ session_start();
+ require_once 'DBconnect.php';
+ 
+ // if session is not set this will redirect to login page
+ if( !isset($_SESSION['user']) ) {
+  header("Location: loginHome.php");
+  exit;
+ }
+ // select loggedin users detail
+ $res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
+ $userRow=mysql_fetch_array($res);
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,8 +35,8 @@
     <div id="bar">
         <div id="name"> Guess the VIP </div>
         <div id="menu">
-            <a class="menu-button" href="loginHome.html">Home</a>
-            <a class="menu-button  page-active" href="playGame.html">Play</a>
+            <a class="menu-button" href="loginHome.php">Home</a>
+            <a class="menu-button  page-active" href="playGame.php">Play</a>
             <a class="menu-button" href="gamesScores.html">Games Scores</a>
         </div>
     </div>
@@ -69,7 +83,7 @@
 
                 <div class="user-score-detail" id="showHideContainer">
                     <a>
-                    User: ____  Current score: 960 points
+                    User: <?php echo $userRow['userName']; ?>  Current score: 960 points
                 </a>
                 </div>
                 <div id="hideaway" class="previous-scores" style="display:none;">

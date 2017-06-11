@@ -86,7 +86,7 @@
                     <a>
                     User: <?php echo $userRow['userName']; ?>  Current score:
                      <?php     
-                     $points = mysql_query("SELECT count(*) as points from answers as a join questions as q on a.questionid = q.questionId WHERE a.answer = q.answerCorrect and a.userId = ".$_SESSION['user']);  
+                     $points = mysql_query("SELECT count(*) * 10 as points from answers as a join questions as q on a.questionid = q.questionId WHERE a.answer = q.answerCorrect and a.userId = ".$_SESSION['user']);  
                      $pointRow=mysql_fetch_array($points);
                      echo $pointRow['points'];            
                      ?> points

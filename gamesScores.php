@@ -24,7 +24,7 @@
         <div id="menu">
             <a class="menu-button" href="loginHome.php">Home</a>
             <a class="menu-button" href="playGame.php">Play</a>
-            <a class="menu-button page-active" href="gamesScores.html">Games Scores</a>
+            <a class="menu-button page-active" href="gamesScores.php">Games Scores</a>
 
         </div>
     </div>

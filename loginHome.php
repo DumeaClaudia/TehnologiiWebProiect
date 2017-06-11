@@ -101,7 +101,7 @@
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div id="user">
                     <div class="form-label"> <b>Username:</b></div>
-                    <input type="text" name="user" value="">
+                    <input type="text" name="user" value="<?php echo $name ?>" >
                    
                 </div>
                   <span><?php echo $userError; ?></span>
@@ -115,6 +115,9 @@
                 <input id="logg" type="submit" value="   Log in   "/>
                   <span><?php echo $errMSG; ?></span>
             </form>
+            <p>
+              <a href="register.php">Register</a>
+            </p>
         </div>
 <?php  } ?>
 

@@ -1,3 +1,17 @@
+<?php
+ ob_start();
+ session_start();
+ require_once 'DBconnect.php';
+ 
+ // if session is not set this will redirect to login page
+ if( !isset($_SESSION['user']) ) {
+  header("Location: loginHome.php");
+  exit;
+ }
+ // select loggedin users detail
+ $res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
+ $userRow=mysql_fetch_array($res);
+?>
 <!DOCTYPE html>
 <html>
 
@@ -46,26 +60,25 @@
                     <th>Score</th>
                     <th>Games played</th>
                 </tr>
-                <tr>
-                    <td>Peter Griffin</td>
-                    <td>100</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Lois Griffin</td>
-                    <td>150</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Joe Swanson</td>
-                    <td>300</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Cleveland Brown</td>
-                    <td>250</td>
-                    <td>4</td>
-                </tr>
+             <?php     
+                 $score = mysql_query("SELECT (select userName from users where userId = a.userId) as userName,
+                                                (select count(*) from answers where userId = a.userId) as games,
+                                                count(*) as points
+                                                from answers as a
+                                                left join questions as q
+                                                on a.questionid = q.questionId
+                                                where a.answer = q.answerCorrect
+                                                group by a.userId");      
+                while ($row = mysql_fetch_array($score, MYSQL_NUM)) { ?>
+                    <tr>
+                        <td><?php echo $row[0]; ?></td>
+                        <td><?php echo $row[2]; ?></td>
+                        <td><?php echo $row[1]; ?></td>
+                    </tr> 
+                <?php
+                }
+                  mysql_free_result($score);       
+              ?>
             </table>
 
         </div>

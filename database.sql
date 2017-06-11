@@ -60,12 +60,15 @@ on a.questionid = q.questionId
 WHERE a.userId = 1 and a.answer = q.answerCorrect;
 
 -- punctaj toti userii
-SELECT userId, count(*) as points
+SELECT (select userName from users where userId = a.userId) as userName,
+(select count(*) from answers where userId = a.userId) as games,
+count(*) as points
 from answers as a
-join questions as q
+left join questions as q
 on a.questionid = q.questionId
-WHERE a.answer = q.answerCorrect
+where a.answer = q.answerCorrect
 group by a.userId;
+
 
 -- intrebarea urmatoare pentru user1
 select q.questionId

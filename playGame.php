@@ -38,6 +38,7 @@
             <a class="menu-button" href="loginHome.php">Home</a>
             <a class="menu-button  page-active" href="playGame.php">Play</a>
             <a class="menu-button" href="gamesScores.html">Games Scores</a>
+            <a class="menu-button" href="logout.php">Log out</a>
         </div>
     </div>
 

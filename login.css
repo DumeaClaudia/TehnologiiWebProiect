@@ -51,12 +51,12 @@ input {
     margin-left: 70px;
     margin-top: 0px;
     width: 30%;
-    height: 30%;
     float: left;
     padding: 15px;
     padding-bottom: 40px;
     box-shadow: 5px 5px 10px grey;
 }
+
 
 #user {
     padding-top: 20px;
@@ -175,13 +175,14 @@ input[type=password] {
         margin-left: 100px;
         margin-top: -60px;
         width: 70%;
-        height: 30%;
         float: left;
         padding: 15px;
         padding-bottom: 40px;
         margin-left: 70px;
         box-shadow: 5px 5px 10px grey;
     }
+
+
     .prop {
         font-size: 16px;
         width: 10%;

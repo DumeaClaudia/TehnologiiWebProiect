@@ -80,7 +80,9 @@
         <div id="name"> Guess the VIP </div>
         <div id="menu">
             <a class="menu-button  page-active" href="loginHome.php">Home</a>
+            <?php  if ( isset($_SESSION['user'])) { ?>
             <a class="menu-button" href="playGame.php">Play</a>
+            <?php  } ?>
             <a class="menu-button" href="gamesScores.html">Games Scores</a>
 
         </div>

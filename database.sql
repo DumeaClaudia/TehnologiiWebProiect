@@ -70,6 +70,7 @@ group by a.userId;
 -- intrebarea urmatoare pentru user1
 select q.questionId
 from questions as q
+left join (select * from answers where userId = 1) as a
 on a.questionid = q.questionId
 where a.userId IS NULL
 order by rand()

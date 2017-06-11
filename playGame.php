@@ -11,6 +11,8 @@
  // select loggedin users detail
  $res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
  $userRow=mysql_fetch_array($res);
+ $userId = $_SESSION['user'];
+ 
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,23 +52,40 @@
                 <div id="game-title">
                     <p><b>Level 1.   Guess who?</b></p>
                 </div>
+                <?php 
+                 $res = mysql_query("select q.questionId, q.questionImage, q.answer1, q.answer2, q.answer3, q.answer4
+                from questions as q
+                left join (select * from answers where userId = '$userId') as a
+                on a.questionid = q.questionId
+                where a.userId IS NULL
+                order by rand()
+                limit 1");
+
+                 $count = mysql_num_rows($res); 
+                 if ($count == 1) {
+                     $questionRow = mysql_fetch_array($res, MYSQL_ASSOC);
+                ?>
                 <div class="game">
                     <div id="game-vip-photo">
                         <div class="vip-frame">
-                            <img class="vip-img" src="img/2014-11-16-uktvsherlockbenedictcumberbatch5_1.jpg" alt="BenedictCumberbatch" />
+                            <img class="vip-img" id="vip-img" src="img/<?php echo $questionRow['questionImage'];?>" alt="<?php echo $questionRow['questionImage'];?>" />
                         </div>
                     </div>
                     <div id="game-answers" class=answers>
-                        <button class="answer-button"> answer1</button>
-                        <button class="answer-button"> answer2</button>
-                        <button class="answer-button"> answer3</button>
-                        <button class="answer-button"> answer4</button>
+                        <button class="answer-button"><?php echo $questionRow['answer1'];?></button>
+                        <button class="answer-button"><?php echo $questionRow['answer2'];?></button>
+                        <button class="answer-button"><?php echo $questionRow['answer3'];?></button>
+                        <button class="answer-button"><?php echo $questionRow['answer4'];?></button>
                     </div>
                     <div id="next-level">
                         <p id="answer-feedback">Your answer isn't correct. </p>
                         <button class="arrow-button" id="next-button"> <span>Next</span></button>
                     </div>
                 </div>
+                <?php 
+                } else {
+                    echo "No more questions for you.";
+                }?>
             </div>
             <div id="others-scores">
                 <h2><b>Scores:</b> </h2>

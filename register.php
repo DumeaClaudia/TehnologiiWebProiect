@@ -141,7 +141,7 @@
                   <span><?php echo $errMSG; ?></span>
             </form>
              <p>
-              <a href="loginHome.php">Log in.</a>
+              <a class="log-link" href="loginHome.php">Log in.</a>
             </p>
         </div>
     </div>

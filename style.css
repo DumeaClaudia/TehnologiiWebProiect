@@ -166,6 +166,7 @@ a.menu-button.page-active:link {
     text-align: left;
 }
 
-#logg{
-     font-size: 30px;
+.log-link{
+     font-size: 25px;
+     color: black;
 }

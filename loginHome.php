@@ -118,7 +118,7 @@
                   <span><?php echo $errMSG; ?></span>
             </form>
             <p>
-              <a href="register.php">Register</a>
+              <a class="log-link" href="register.php">Register</a>
             </p>
         </div>
 <?php  } ?>

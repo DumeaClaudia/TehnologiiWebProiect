@@ -157,3 +157,15 @@ a.menu-button.page-active:link {
         background-color: lightgrey;
     }
 }
+
+.raports ul li{
+    text-align: left;
+}
+
+.raports p{
+    text-align: left;
+}
+
+#logg{
+     font-size: 30px;
+}

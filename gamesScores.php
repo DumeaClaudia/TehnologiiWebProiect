@@ -19,8 +19,7 @@
 </head>
 
 <body>
-    <div id="top-logo">
-    </div>
+
     <div id="background">
     </div>
 
@@ -42,6 +41,7 @@
         <div class="content">
             <p id="introducere">Here you can view all the scores of the players of the game "Guess the VIP" and the number of games that they played until today.</p>
         </div>
+       
 
         <div class="content content-box">
             <p id="title-classification"><b> Score table:</b></p>
@@ -75,7 +75,22 @@
                   mysql_free_result($score);       
               ?>
             </table>
-
+          
+        </div>
+          <div class=" content raports">
+            <p> Raports:
+            </p>
+              <ul>
+                <li>
+                    <a href="search.php?q=">JSON</a>
+                </li>
+                 <li>
+                    <a href="raport_html.php">HTML</a>
+                </li>
+                <li>
+                    <a href="raport_csv.php">CSV</a>
+                </li>
+            </ul>
         </div>
     </div>
 

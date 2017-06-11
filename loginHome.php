@@ -72,8 +72,6 @@
 </head>
 
 <body>
-    <div id="top-logo">
-    </div>
     <div id="background">
     </div>
     <div id="bar">

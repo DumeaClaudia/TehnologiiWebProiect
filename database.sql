@@ -72,3 +72,5 @@ select q.questionId
 from questions as q
 on a.questionid = q.questionId
 where a.userId IS NULL
+order by rand()
+limit 1;

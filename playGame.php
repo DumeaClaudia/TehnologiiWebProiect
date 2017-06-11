@@ -1,7 +1,7 @@
 <?php
  ob_start();
  session_start();
- require_once 'DBconnect.php';
+ require_once 'dbconnect.php';
  
  // if session is not set this will redirect to login page
  if( !isset($_SESSION['user']) ) {
@@ -37,7 +37,7 @@
         <div id="menu">
             <a class="menu-button" href="loginHome.php">Home</a>
             <a class="menu-button  page-active" href="playGame.php">Play</a>
-            <a class="menu-button" href="gamesScores.html">Games Scores</a>
+            <a class="menu-button" href="gamesScores.php">Games Scores</a>
             <a class="menu-button" href="logout.php">Log out</a>
         </div>
     </div>

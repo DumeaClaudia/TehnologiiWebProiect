@@ -28,9 +28,13 @@
         <div id="name"> Guess the VIP </div>
         <div id="menu">
             <a class="menu-button" href="loginHome.php">Home</a>
+            <?php  if ( isset($_SESSION['user'])) { ?>
             <a class="menu-button" href="playGame.php">Play</a>
+            <?php  } ?>
             <a class="menu-button page-active" href="gamesScores.php">Games Scores</a>
-
+            <?php  if ( isset($_SESSION['user'])) { ?>
+            <a class="menu-button" href="logout.php">Log out</a>
+            <?php  } ?>
         </div>
     </div>
     <div id="main">

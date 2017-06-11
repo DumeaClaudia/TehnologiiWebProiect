@@ -84,7 +84,9 @@
             <a class="menu-button" href="playGame.php">Play</a>
             <?php  } ?>
             <a class="menu-button" href="gamesScores.php">Games Scores</a>
-
+            <?php  if ( isset($_SESSION['user'])) { ?>
+            <a class="menu-button" href="logout.php">Log out</a>
+            <?php  } ?>
         </div>
     </div>
 

@@ -15,8 +15,8 @@ function ajaxGet(url, cFunction) {
 document.addEventListener("DOMContentLoaded", function (event) {
 
     var score_table = document.getElementById('score-table');
-    document.getElementsByName('search-smth')[0].addEventListener('input', function () {
-        ajaxGet("search_example.json", function (resp) {
+    document.getElementsByName('search-smth')[0].addEventListener('input', function (e) {
+        ajaxGet("search.php?q="+e.target.value, function (resp) {
             
             var users = JSON.parse(resp.responseText),
                 users_len = users.length,

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="tableScores.css" />
     <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link href="raport_atom_rss.php" rel="alternate" type="application/rss+xml" title="Scores" />
     <script type="text/javascript" src="js/search.js">
     </script>
     <meta charset="UTF-8">

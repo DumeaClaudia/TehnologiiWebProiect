@@ -58,7 +58,7 @@
              <?php     
                  $score = mysql_query("SELECT (select userName from users where userId = a.userId) as userName,
                                                 (select count(*) from answers where userId = a.userId) as games,
-                                                count(*) as points
+                                                count(*) * 10 as points
                                                 from answers as a
                                                 left join questions as q
                                                 on a.questionid = q.questionId

@@ -34,7 +34,7 @@ if ( isset($_SESSION['user']) != "" ) {
         echo "The answer is not correct.";
       }
 
-      $query = "INSERT INTO answers(userId, questionId, answer) VALUES('$uid','$qid', '$userAnswer' )";
+      $query = "INSERT INTO answers(userId, questionId, answer, date) VALUES('$uid','$qid', '$userAnswer', curdate() )";
       $res = mysql_query($query);
   
       if ($res) {

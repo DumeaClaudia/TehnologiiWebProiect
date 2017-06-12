@@ -87,12 +87,25 @@
                     echo "No more questions for you.";
                 }?>
             </div>
-            <div id="others-scores">
-                <h2><b>Scores:</b> </h2>
-                <hr class="scores-hr" />
-                <p>user1 score:30</p>
-                <hr class="scores-hr" />
-                <p>user2 score:30</p>
+            <div id="others-scores"
+                 <?php     
+                 $score = mysql_query("SELECT (select userName from users where userId = a.userId) as userName,
+                                                count(*) * 10 as points
+                                                from answers as a
+                                                left join questions as q
+                                                on a.questionid = q.questionId
+                                                where a.answer = q.answerCorrect
+                                                group by a.userId
+                                                order by points desc
+                                                limit 10
+                                                ");      
+                while ($row = mysql_fetch_array($score, MYSQL_NUM)) { ?>
+                     <hr class="scores-hr" />
+                      <p> <?php echo $row[0]; ?>  score:<td><?php echo $row[1]; ?></p>
+                <?php
+                }
+                  mysql_free_result($score);       
+              ?>
                 <br/>
             </div>
         </div>
@@ -111,22 +124,28 @@
                 </div>
                 <div id="hideaway" class="previous-scores" style="display:none;">
                     <table>
-                        <tr>
-                            <td>21-Apr-17</td>
-                            <td>60 points</td>
-                            <td>2 games played</td>
-                        </tr>
-                        <tr>
-                            <td>22-Apr-17</td>
-                            <td>100 points</td>
-                            <td>4 games played</td>
-                        </tr>
-                        <tr>
-                            <td>23-Apr-17</td>
-                            <td>800 points</td>
-                            <td>30 games played</td>
-                        </tr>
-
+                <?php     
+                 $score = mysql_query("SELECT  a.date,
+                                       (SELECT count(*) * 10
+                                            from answers as a2
+                                            join questions as q
+                                            on a2.questionid = q.questionId
+                                            WHERE a2.userId = '$userId' and a.date = a2.date and a2.answer = q.answerCorrect) as points,
+                                        count(*) as games
+                                        from answers as a
+                                        WHERE a.userId = '$userId'
+                                        group by a.date
+                                        order by a.date desc;");      
+                while ($row = mysql_fetch_array($score, MYSQL_NUM)) { ?>
+                    <tr>
+                        <td><?php echo $row[0]; ?></td>
+                        <td><?php echo $row[1]; ?> points</td>
+                        <td><?php echo $row[2]; ?> games played</td>
+                    </tr> 
+                <?php
+                }
+                  mysql_free_result($score);       
+              ?>
                     </table>
                 </div>
 

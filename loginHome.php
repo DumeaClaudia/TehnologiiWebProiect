@@ -1,5 +1,4 @@
 <?php
- ob_start();
  session_start();
 
  // phpinfo();
@@ -92,8 +91,8 @@
     <div id="main">
         <div class="begin">
             <p id="welcome">Hello <?php if (isset($userRow['userName'])) { echo $userRow['userName']; } else { echo 'Guest'; } ?>, welcome!</p>
-            <p id="about-game"> The main idea of this game is to recognize different stars after their profile photo. The rules are simple. You have to choose from four options, where only one has the correct name and you will win some points, according to the dificulty of that image and the associated options. I hope you'll play and like it.
-                <br> First of all you have to login to start a new game or come back to your account.
+            <p id="about-game"> The main idea of this game is to recognize different stars after their profile photo. The rules are simple. You have to choose from four options, where only one has the correct name and you will win some points. I hope you'll play and like it.
+                <br> First of all you have to register to start a new game or to login for comming back to your account.
             </p>
             <img class="vip-collage" src="img/colaj.jpg" alt="colaj" />
         </div>

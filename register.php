@@ -1,5 +1,4 @@
 <?php
- ob_start();
  session_start();
  if( isset($_SESSION['user'])!="" ){
   header("Location: home.php");
@@ -31,10 +30,10 @@
    $nameError = "Please enter your full name.";
   } else if (strlen($name) < 3) {
    $error = true;
-   $nameError = "Name must have atleat 3 characters.";
+   $nameError = "Name must have atleast 3 characters.";
   } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
    $error = true;
-   $nameError = "Name must contain alphabets and space.";
+   $nameError = "Name must contain alphabets or space.";
   }
   
   // password validation

@@ -1,5 +1,4 @@
 <?php
- ob_start();
  session_start();
  require_once 'dbconnect.php';
  
@@ -50,7 +49,7 @@
 
             <div id="game-holder">
                 <div id="game-title">
-                    <p><b>Level 1.   Guess who?</b></p>
+                    <p><b>Guess who?</b></p>
                 </div>
                 <?php 
                  $res = mysql_query("select q.questionId, q.questionImage, q.answer1, q.answer2, q.answer3, q.answer4
